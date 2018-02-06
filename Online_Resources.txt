@@ -1,0 +1,6 @@
+Zookeeper Security:
+	https://community.hortonworks.com/articles/29900/zookeeper-using-superdigest-to-gain-full-access-to.html
+	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_sg_zookeeper_security.html#topic_11
+	
+	
+	
