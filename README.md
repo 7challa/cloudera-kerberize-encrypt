@@ -65,6 +65,8 @@ Re-enter KDC database master key to verify:
 
 Start the krb5kdc: service krb5kdc start [This starts the key distribution center (kdc)]
 Start the Admin Server: service kadmin start [This starts the kerberos admin server]
+chkconfig kadmin on
+chkconfig krb5kdc on
 
 Notes:
 One the KDC host you should see the below scripts under /etc/init.d 
