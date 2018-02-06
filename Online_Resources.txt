@@ -9,7 +9,7 @@ HiveMetastore Security:
 	<property>
 		<name>hadoop.proxyuser.hive.groups</name>
 		<value>*</value>
-    </property>
+        </property>
 Flume Security:
 	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_sg_flume_security_props.html#topic_4_2
 
