@@ -52,7 +52,7 @@ Update encryption types in the krb5.conf under libdefaults section
 	 default_tkt_enctypes = aes256-cts-hmac-sha1-96 des-cbc-md5
 Update /var/kerberos/krb5kdc/kadm5.acl [Include principal that has admin privileges]
 Update /var/kerberos/krb5kdc/kdc.conf [REALM, ticket renewal life]
-Create krb5 database: "kdb5_util create" [Remember the password]
+Create krb5 database: "kdb5_util create -s" [Remember the password]
 Start the krb5kdc: service krb5kdc start [This starts the key distribution center (kdc)]
 Start the Admin Server: service kadmin start [This starts the kerberos admin server]
 
