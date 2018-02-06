@@ -45,7 +45,8 @@ Download MySQL JDBC jar from oracle website and rename the file as mysql-connect
 
 
 Install Kerberos:
-On the KDC Host run "yum install krb5-server"
+On the KDC Host run "yum install -y krb5-server"
+On the KDS Host run "yum install -y openldap-clients" if you want OpenLDAP access
 Edit /etc/krb5.conf file to update the REALM, kdc host and DOMAIN_REALM
 Update encryption types in the krb5.conf under libdefaults section
 	 default_tgs_enctypes = aes256-cts-hmac-sha1-96 des-cbc-md5
