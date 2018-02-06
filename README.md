@@ -48,6 +48,8 @@ Install Kerberos:
 On the KDC Host run "yum install krb5-server"
 Edit /etc/krb5.conf file to update the REALM, kdc host and DOMAIN_REALM
 Update encryption types in the krb5.conf under libdefaults section
+	 default_tgs_enctypes = aes256-cts-hmac-sha1-96 des-cbc-md5
+	 default_tkt_enctypes = aes256-cts-hmac-sha1-96 des-cbc-md5
 Update /var/kerberos/krb5kdc/kadm5.acl [Include principal that has admin privileges]
 Update /var/kerberos/krb5kdc/kdc.conf [REALM, ticket renewal life]
 Create krb5 database: "kdb5_util create" [Remember the password]
