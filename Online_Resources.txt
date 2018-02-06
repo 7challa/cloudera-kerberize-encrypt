@@ -3,4 +3,18 @@ Zookeeper Security:
 	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_sg_zookeeper_security.html#topic_11
 	
 	
+HiveMetastore Security:
+	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_sg_hive_metastore_security.html#topic_9_2
+	#Should not be a wild card
+	<property>
+		<name>hadoop.proxyuser.hive.groups</name>
+		<value>*</value>
+    </property>
+Flume Security:
+	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_sg_flume_security_props.html#topic_4_2
+
+
+HBase Security:
+	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_sg_hbase_authentication.html#config_kerb_principals_for_hbase	
+	
 	
