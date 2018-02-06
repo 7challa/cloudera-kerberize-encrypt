@@ -68,6 +68,20 @@ Start the Admin Server: service kadmin start [This starts the kerberos admin ser
 chkconfig kadmin on
 chkconfig krb5kdc on
 
+ kadmin.local <<eoj
+ modprinc -maxrenewlife 1week krbtgt/HADOOP.COM@HADOOP.COM
+ eoj
+ 
+ kadmin.local <<eoj
+ addprinc -pw Admin@123 cloudera-scm/admin@HADOOP.COM
+ modprinc -maxrenewlife 1week cloudera-scm/admin@HADOOP.COM
+ eoj
+ 
+ # add the hdfs principal so you have a superuser for hdfs
+ kadmin.local <<eoj
+ addprinc -pw Admin@123 hdfs@HADOOP.COM
+ eoj
+
 Notes:
 One the KDC host you should see the below scripts under /etc/init.d 
 [root@localhost init.d]# pwd
