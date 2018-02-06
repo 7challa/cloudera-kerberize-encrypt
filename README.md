@@ -96,10 +96,8 @@ On every node in the Hadoop Cluster install the krb5 workstation
 "yum install krb5-workstation"
 Copy the /etc/krb5.conf from the KDC server and put it in the same location (same file name) on all the Hadoop Nodes.
 Copy OracleJDK unlimited JCE policy files
-Create a principal for ClouderaManager:
-On the kdc server;sudo kadmin.local
-kadmin.local: addprinc scm/admin 
-<enter a password and note it down>
-Test the princpal created for SCM: On any other host run the command "kinit scm/admin" and enter the password. 
+
+Test the princpal created for SCM: 
+On any other host run the command "kinit cloudera-scm/admin" and enter the password. 
 If everythig goes well upto this point then you have a working Kerberos installation to integrate it with Cloudera Manager
 
