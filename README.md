@@ -54,6 +54,15 @@ Create krb5 database: "kdb5_util create" [Remember the password]
 Start the krb5kdc: service krb5kdc start [This starts the key distribution center (kdc)]
 Start the Admin Server: service kadmin start [This starts the kerberos admin server]
 
+Notes:
+One the KDC host you should see the below scripts under /etc/init.d 
+[root@localhost init.d]# pwd
+/etc/init.d
+[root@localhost init.d]# ls -lrt k*
+-rwxr-xr-x 1 root root  2815 Nov 22  2016 krb5kdc
+-rwxr-xr-x 1 root root  2055 Nov 22  2016 kprop
+-rwxr-xr-x 1 root root  2488 Nov 22  2016 kadmin
+
 
 On every node in the Hadoop Cluster install the krb5 workstation
 "yum install krb5-workstation"
