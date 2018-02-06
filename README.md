@@ -53,6 +53,16 @@ Update encryption types in the krb5.conf under libdefaults section
 Update /var/kerberos/krb5kdc/kadm5.acl [Include principal that has admin privileges]
 Update /var/kerberos/krb5kdc/kdc.conf [REALM, ticket renewal life]
 Create krb5 database: "kdb5_util create -s" [Remember the password]
+
+[root@localhost ~]# kdb5_util create
+Loading random data
+Initializing database '/var/kerberos/krb5kdc/principal' for realm 'HADOOP.COM',
+master key name 'K/M@HADOOP.COM'
+You will be prompted for the database Master Password.
+It is important that you NOT FORGET this password.
+Enter KDC database master key: 
+Re-enter KDC database master key to verify:
+
 Start the krb5kdc: service krb5kdc start [This starts the key distribution center (kdc)]
 Start the Admin Server: service kadmin start [This starts the kerberos admin server]
 
