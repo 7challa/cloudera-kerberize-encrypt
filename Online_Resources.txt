@@ -17,4 +17,7 @@ Flume Security:
 HBase Security:
 	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_sg_hbase_authentication.html#config_kerb_principals_for_hbase	
 	
-	
+Impala Security:
+	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/impala_kerberos.html
+	https://www.cloudera.com/documentation/enterprise/5-9-x/topics/impala_proxy.html#proxy
+	Do we need to generate principals for the HAProxy if Impala is proxied through HAProxy?
