@@ -84,7 +84,7 @@ chkconfig krb5kdc on
 	eoj
 
 Notes:
-One the KDC host you should see the below scripts under /etc/init.d 
+On the KDC host you should see the below scripts under /etc/init.d 
 [root@localhost init.d]# pwd
 /etc/init.d
 [root@localhost init.d]# ls -lrt k*
